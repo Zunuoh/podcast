@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image, TouchableOpacity } from 'react-native';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, backgroundColor: 'black', padding: 30 }}>
       <View style={{ paddingTop: 40, flexDirection: 'row' }}>
@@ -10,9 +10,7 @@ const LoginScreen = ({navigation}) => {
           <FontAwesome name="check-circle" size={24} color="white" />
         </View>
         <View style={{ paddingLeft: 5, paddingTop: 2 }}>
-          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>
-            Padio
-          </Text>
+          <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Padio</Text>
         </View>
       </View>
 
@@ -32,10 +30,9 @@ const LoginScreen = ({navigation}) => {
           justifyContent: 'center',
           alignItems: 'center',
           marginTop: 30,
-        }}>
-        <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>
-          Sign in
-        </Text>
+        }}
+      >
+        <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Sign in</Text>
       </TouchableOpacity>
 
       <TouchableOpacity
@@ -50,23 +47,21 @@ const LoginScreen = ({navigation}) => {
           marginTop: 20,
           borderColor: 'white',
           borderWidth: 1.5,
-        }}>
-        <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>
-          Sign in with twitter
-        </Text>
+        }}
+      >
+        <Text style={{ color: 'white', fontSize: 20, fontWeight: 'bold' }}>Sign in with twitter</Text>
       </TouchableOpacity>
-     <TouchableOpacity onPress={() => navigation.navigate('Channel')}> 
-      <View
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          paddingTop: 30,
-        }}>
-        <Text style={{ color: 'white', fontSize: 23, fontWeight: 'bold' }}>
-          LOG IN
-        </Text>
-      </View>
+      <TouchableOpacity onPress={() => navigation.navigate('Channel')}>
+        <View
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingTop: 30,
+          }}
+        >
+          <Text style={{ color: 'white', fontSize: 23, fontWeight: 'bold' }}>LOG IN</Text>
+        </View>
       </TouchableOpacity>
     </View>
   );
